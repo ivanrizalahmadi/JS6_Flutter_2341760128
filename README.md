@@ -44,6 +44,16 @@ Properti mainAxisAlignment: MainAxisAlignment.spaceEvenly digunakan agar semua k
 Untuk output nya sebagai berikut
 ![output prak 2](image-3.png)
 
+# 📘 Praktikum 3: Implementasi Text Section
+
+saya membuat variabel textSection yang berisi Container dengan padding 32 di semua sisi.
+Di dalamnya terdapat widget Text dengan properti softWrap: true.
+![padding](image-5.png)
+lalu masukkan textSection ke dalam ListView body, setelah buttonSection.
+![text section](image-4.png)
+
+untuk output nya adalah sebagai berikut :
+![output 3](image-6.png)
 
 
 
