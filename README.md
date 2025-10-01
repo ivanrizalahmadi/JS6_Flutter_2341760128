@@ -4,7 +4,7 @@ Project ini merupakan hasil praktikum Flutter tentang **Layout** menggunakan wid
 
 # 📄 Praktikum 1: Layout
 
-![soal 1,2,3](image.png)
+![soal 1,2,3](assets/image.png)
 
 Row + Expanded + Column
 Row digunakan untuk menyusun widget secara horizontal.
@@ -15,7 +15,7 @@ Soal 2: Teks judul dibungkus Container dengan padding: EdgeInsets.only(bottom: 8
 Soal 3: Tambahkan Icon(Icons.star, color: Colors.red) dan teks "41" di sisi kanan.
 
 Untuk output nya adalah sebagai berikut:
-![output 1](image-1.png)
+![output 1](assets/image-1.png)
 
 
 
