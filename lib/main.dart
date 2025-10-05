@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
             Icons.star,
             color: Colors.red,
           ),
-          const Text('41'),
+          const Text('4.8'),
         ],
       ),
     );
@@ -59,10 +59,11 @@ class MyApp extends StatelessWidget {
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: const Text(
-        'Gunung Panderman merupakan salah satu gunung yang menjadi ikon '
-        'kota Batu, Malang. Gunung ini menawarkan panorama indah dengan udara sejuk '
-        'dan jalur pendakian yang ramah untuk pemula. '
-         '      Ivan Rizal - 2341760128     ',
+        'Gunung Panderman merupakan salah satu gunung terkenal di Kota Batu, '
+        'Malang. Gunung ini memiliki jalur pendakian yang cukup mudah dan pemandangan '
+        'yang indah, terutama saat matahari terbit. Dari puncaknya, wisatawan dapat '
+        'melihat panorama Kota Batu secara menyeluruh. '
+        '\n\nIvan Rizal - 2341760128',
         softWrap: true,
       ),
     );
@@ -73,8 +74,14 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: ListView(   
+        body: ListView(
           children: [
+            Image.asset(
+              'assets/images/panderman.jpg', // gambar dari folder assets/images
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover, // gambar menutupi area penuh
+            ),
             titleSection,
             buttonSection,
             textSection,
@@ -84,7 +91,7 @@ class MyApp extends StatelessWidget {
     );
   }
 
-  // Method Helper
+  // Method Helper untuk Button
   Column _buildButtonColumn(Color color, IconData icon, String label) {
     return Column(
       mainAxisSize: MainAxisSize.min,

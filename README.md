@@ -56,6 +56,23 @@ untuk output nya adalah sebagai berikut :
 ![output 3](image-6.png)
 
 
+# Praktikum 4: Image Section
+
+untuk awal awal saya memodifikasi file pubspec agar bisa mengambil gambar dari folder yang saya buat , yaitu assets/images
+, lalu setelah nya saya memodifikasi file di main.dart agar dapat mengambil file folder foto nya dan juga mengatur layout gambarnya
+seperti ini:
+![Output 4](image-7.png)
+
+Lalu untuk Output nya adalah sebagai berikut:
+![output 5](image-8.png)
+
+
+
+
+
+
+
+
 
 
 
