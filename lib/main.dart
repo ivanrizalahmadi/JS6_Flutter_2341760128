@@ -3,12 +3,22 @@ import '../pages/home_page.dart';
 import '../pages/item_page.dart';
 
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    initialRoute: '/',
-    routes: {
-      '/': (context) => const HomePage(),
-      '/item': (context) => const ItemPage(),
-    },
-  ));
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Aplikasi Belanja',
+      theme: ThemeData(primarySwatch: Colors.teal),
+      home: const HomePage(),
+      routes: {
+        '/item': (context) => const ItemPage(),
+      },
+      debugShowCheckedModeBanner: false,
+    );
+  }
 }

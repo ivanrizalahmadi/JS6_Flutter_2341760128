@@ -99,7 +99,41 @@ Ketika di klik akan diteruskan ke route item
 ![alt text](image-15.png)
 ![alt text](image-16.png)
 
-# Tugas Praktikum 2
+# 🛒 Tugas Praktikum 2: Aplikasi Belanja Flutter
+
+Struktur Folder dan file yang saya pakai untuk membuat aplikasi ini sama seperti praktikum 5, seperti berikut
+![alt text](image-17.png)
+
+Lalu mengatur image di pubspec
+![alt text](image-18.png)
+
+Membuat Model data nya 
+![alt text](image-19.png)
+
+Membuat Halaman Home 
+![alt text](dart3.png)
+
+Membuat Halaman Item
+![alt text](image-20.png)
+
+Lalu untuk Main nya mengimport dari halaman item dan home dan mengatur navigasi beserta route
+![alt text](image-21.png)
+
+tidak lupa untuk menambahkan Hero animation di home dan item page
+![alt text](image-22.png)
+Dengan ini, gambar akan berpindah dengan animasi halus saat pengguna menekan produk.
+
+Untuk Output nya adalah Seperti Berikut:
+![alt text](image-23.png)
+
+Lalu ketika di klik pada setiap produk nya
+
+Produk Garam
+![alt text](image-24.png)
+
+Produk Gula
+![alt text](image-25.png)
+
 
 
 
