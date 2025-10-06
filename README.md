@@ -66,6 +66,40 @@ seperti ini:
 Lalu untuk Output nya adalah sebagai berikut:
 ![output 5](image-8.png)
 
+# Praktikum 5: 
+Membuat Struktur Folder
+
+Buat folder models untuk menyimpan model data.
+Buat folder pages untuk menampung halaman HomePage dan ItemPage.
+![alt text](image-9.png)
+
+Membuat Model Data
+Di dalam lib/models/item.dart, dibuat class Item yang berisi atribut name dan price sebagai representasi dari setiap barang.
+![alt text](image-10.png)
+
+Membuat Halaman HomePage
+![alt text](image-11.png)
+Di file lib/pages/home_page.dart, dibuat tampilan daftar barang menggunakan ListView.builder().
+Setiap item dalam daftar menampilkan nama dan harga barang.
+Saat item ditekan, akan berpindah ke halaman detail menggunakan Navigator.pushNamed().
+
+
+Membuat Halaman ItemPage
+![alt text](image-12.png)
+Di file lib/pages/item_page.dart, halaman ini menerima data dari HomePage melalui arguments.
+Menampilkan detail nama dan harga barang yang dipilih.
+
+Menentukan Rute Navigasi
+![alt text](image-13.png)
+Di file lib/main.dart, ditentukan initialRoute dan routes untuk menghubungkan halaman '/' (HomePage) dan '/item' (ItemPage).
+
+Lalu untuk output nya adalah sebagai berikut:
+![alt text](image-14.png)
+Ketika di klik akan diteruskan ke route item
+![alt text](image-15.png)
+![alt text](image-16.png)
+
+# Tugas Praktikum 2
 
 
 
