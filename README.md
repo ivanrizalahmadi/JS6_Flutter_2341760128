@@ -5,9 +5,9 @@
 ## Akses dan Instalasi Aplikasi
 Aplikasi LABIFY telah melalui tahap pengembangan dan pengujian akhir, serta siap untuk didistribusikan. Pengguna dapat mengunduh berkas instalasi (APK) secara langsung melalui pemindaian Kode QR atau tautan yang tersedia di bawah ini.
 
-**Pindai Kode QR untuk Mengunduh:**
+**Pindai Kode QR untuk Mengunduh Langsung:**
 
-![Kode QR Unduhan](Labify_apk.png)
+![Kode QR Unduhan](labify_PBL.apk.png)
 
 
 **Tautan Alternatif:**
