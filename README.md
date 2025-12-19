@@ -1,97 +1,187 @@
-# LABIFY - Sistem Informasi Peminjaman Alat Laboratorium
+# 📱 Flutter Layout – Jobsheet 6  
 
-![Flutter Version](https://img.shields.io/badge/Flutter-Stable-blue) ![Firebase](https://img.shields.io/badge/Backend-Firebase-orange) ![Platform](https://img.shields.io/badge/Platform-Android-green)
-
-## Akses dan Instalasi Aplikasi
-Aplikasi LABIFY telah melalui tahap pengembangan dan pengujian akhir, serta siap untuk didistribusikan. Pengguna dapat mengunduh berkas instalasi (APK) secara langsung melalui pemindaian Kode QR atau tautan yang tersedia di bawah ini.
-
-**Pindai Kode QR untuk Mengunduh Langsung:**
-
-![Kode QR Unduhan](labify_PBL.apk.png)
-
-
-**Tautan Alternatif:**
-[**UNDUH APLIKASI LABIFY VIA GOOGLE DRIVE**](https://drive.google.com/drive/folders/1RwqCOdwbjhIuICtskyRz97IphvlxJJdV?usp=sharing)
+Project ini merupakan hasil praktikum Flutter tentang *Layout* menggunakan widget dasar seperti Row, Column, Expanded, Container, Text, dan Icon.
 
 ---
 
-## Deskripsi Sistem
-**LABIFY** merupakan solusi perangkat lunak berbasis seluler yang dirancang khusus untuk memodernisasi tata kelola peminjaman inventaris laboratorium di lingkungan akademik. Sistem ini dikembangkan untuk mengeliminasi inefisiensi pencatatan manual dan meningkatkan akurasi data inventaris.
+## 📄 Praktikum 1: Layout  
 
-Sistem ini mengadopsi arsitektur berbasis peran (*Role-Based Access Control*) yang memisahkan antarmuka dan hak akses antara **User** sebagai pengguna layanan dan **Admin** sebagai administrator sistem. Integrasi dengan layanan *Firebase* memastikan integritas data dan pemantauan ketersediaan alat dapat dilakukan secara waktu nyata (*real-time*).
+![Soal 1, 2, 3](assets/image.png)
 
----
+### 🔹 Penjelasan:
+- Row digunakan untuk menyusun widget secara horizontal.  
+- Expanded membuat Column menyesuaikan ruang yang tersisa.  
+- Column menampilkan teks judul dan lokasi.  
 
-## Fitur Unggulan
+*Soal 1:*  
+crossAxisAlignment: CrossAxisAlignment.start → membuat teks rata kiri.  
 
-### Modul User (Pengguna)
-* **Katalog Inventaris Digital:** Akses komprehensif terhadap daftar alat laboratorium, mencakup spesifikasi teknis, visualisasi alat, dan informasi ketersediaan stok di setiap laboratorium.
-* **Sistem Peminjaman Terintegrasi:** Mekanisme pengajuan peminjaman yang efisien dengan validasi formulir digital untuk pemilihan tanggal dan durasi peminjaman.
-* **Pemantauan Status Real-Time:** Transparansi proses pengajuan melalui notifikasi status persetujuan yang terbarui secara otomatis.
-* **Arsip Transaksi:** Rekam jejak digital seluruh aktivitas peminjaman yang telah dilakukan oleh pengguna untuk keperluan audit pribadi.
-* **Manajemen Profil:** Pengelolaan data identitas pengguna yang aman dan terstruktur.
+*Soal 2:*  
+Teks judul dibungkus Container dengan padding: EdgeInsets.only(bottom: 8) → memberi jarak antar teks.  
+Lokasi diberi warna abu-abu (Colors.grey).  
 
-### Modul Administrator (Admin Lab)
-* **Dasbor Analitik:** Visualisasi ringkas mengenai aktivitas peminjaman yang sedang berlangsung untuk mendukung pengambilan keputusan operasional.
-* **Manajemen Inventaris:** Kontrol penuh untuk pembaruan data aset, penambahan unit baru, serta penyesuaian informasi teknis alat.
-* **Sistem Validasi:** Otoritas untuk meninjau, menyetujui, atau menolak permohonan peminjaman berdasarkan ketersediaan dan kebijakan laboratorium.
-* **Penyelesaian Transaksi:** Prosedur verifikasi pengembalian alat yang secara otomatis memperbarui jumlah stok dalam pangkalan data.
-* **Audit Peminjam:** Akses terhadap riwayat peminjaman spesifik per mahasiswa untuk evaluasi kepatuhan pengguna.
+*Soal 3:*  
+Tambahkan Icon(Icons.star, color: Colors.red) dan teks "41" di sisi kanan.  
 
----
-
-## Spesifikasi Teknis
-Aplikasi ini dibangun di atas fondasi teknologi modern untuk menjamin performa tinggi, skalabilitas, dan pengalaman pengguna yang responsif.
-
-* **Kerangka Kerja (Framework):** Flutter (Dart Language)
-* **Backend & Basis Data:** Google Firebase (Authentication & Cloud Firestore)
-* **Arsitektur Perangkat Lunak:** MVVM (Model-View-ViewModel).
-* **Lingkungan Pengembangan:** Visual Studio Code, Android Studio
+*Output:*
+![Output 1](assets/image-1.png)
 
 ---
 
-## Panduan Instalasi Kode Sumber
-Bagian ini ditujukan bagi pengembang yang ingin meninjau atau mengembangkan lebih lanjut kode sumber LABIFY di lingkungan lokal.
+## 📄 Praktikum 2: Implementasi Button Row  
 
-### Prasyarat Sistem
-* Flutter SDK (Versi Stabil Terbaru)
-* Android Studio atau Visual Studio Code
-* Koneksi Internet (Diperlukan untuk sinkronisasi Firebase)
+![Button Row](image-1.png)
 
-### Prosedur Instalasi
-1.  **Kloning Repositori**
-    Salin repositori proyek ke direktori lokal menggunakan perintah berikut:
-    ```bash
-    git clone [https://github.com/USERNAME_ANDA/NAMA_REPO_ANDA.git](https://github.com/USERNAME_ANDA/NAMA_REPO_ANDA.git)
-    ```
+### 🔹 Penjelasan:
+Pada praktikum ini ditambahkan baris tombol (button row) di bawah title section.  
+Terdapat *3 buah kolom* dengan tata letak yang sama:
+1. Sebuah ikon  
+2. Sebuah teks di bawah ikon  
 
-2.  **Navigasi Direktori**
-    Masuk ke dalam folder proyek yang telah disalin:
-    ```bash
-    cd NAMA_REPO_ANDA
-    ```
+Agar efisien, dibuat *method helper* bernama _buildButtonColumn() dengan parameter:
+- color → warna teks dan ikon  
+- icon → ikon yang ditampilkan  
+- label → teks di bawah ikon  
 
-3.  **Instalasi Dependensi**
-    Unduh seluruh pustaka dan dependensi yang diperlukan oleh sistem:
-    ```bash
-    flutter pub get
-    ```
+![Helper Method](image-2.png)
 
-4.  **Eksekusi Aplikasi**
-    Jalankan aplikasi pada emulator atau perangkat fisik yang terhubung:
-    ```bash
-    flutter run
-    ```
+### ❓ Pertanyaan:
+*Soal 1:* Mengapa dibuat method _buildButtonColumn?  
+➡ Supaya kode lebih rapi dan tidak perlu menulis berulang kali untuk setiap tombol.
+
+*Soal 2:* Bagaimana cara memberi jarak antara ikon dan teks?  
+➡ Teks diletakkan di dalam Container dengan margin: EdgeInsets.only(top: 8).
+
+*Soal 3:* Bagaimana cara meratakan tombol di dalam baris?  
+➡ Gunakan Row() dengan mainAxisAlignment: MainAxisAlignment.spaceEvenly.
+
+*Output:*
+![Output Praktikum 2](image-3.png)
 
 ---
 
-## Tim Pengembang (Kelompok 4)
-Proyek ini dikembangkan oleh tim yang solid dan bekerja bersama.
+## 📘 Praktikum 3: Implementasi Text Section  
 
-* **Aidatul Rosida** 
-* **Dinarul Lailil Mubarokah** 
-* **Ivan Rizal Ahmadi**
-* **Luthfi Putra Mahardika** 
-* **Mochamad Zacky Yudha A** 
+Membuat variabel textSection yang berisi Container dengan padding sebesar *32* di semua sisi.  
+Di dalamnya terdapat widget Text dengan properti softWrap: true.
+
+![Padding](image-5.png)
+
+Kemudian masukkan textSection ke dalam ListView di bagian body, setelah buttonSection.
+
+![Text Section](image-4.png)
+
+*Output:*
+![Output Praktikum 3](image-6.png)
 
 ---
+
+## 🖼️ Praktikum 4: Image Section  
+
+Langkah awal:
+- Modifikasi file pubspec.yaml agar bisa mengambil gambar dari folder assets/images.
+- Tambahkan gambar dan atur layout pada main.dart.
+
+![Output 4](image-7.png)
+
+*Output Akhir:*
+![Output 5](image-8.png)
+
+---
+
+## 🧩 Praktikum 5: Struktur Folder dan Navigasi  
+
+### 📂 Membuat Struktur Folder
+Buat folder:
+- models → untuk model data  
+- pages → untuk halaman HomePage dan ItemPage
+
+![Struktur Folder](image-9.png)
+
+### 🧱 Membuat Model Data  
+File: lib/models/item.dart  
+Class Item berisi atribut name dan price sebagai representasi barang.  
+
+![Model Data](image-10.png)
+
+### 🏠 Membuat Halaman HomePage  
+File: lib/pages/home_page.dart  
+Menampilkan daftar barang menggunakan ListView.builder().  
+Setiap item menampilkan nama dan harga barang.  
+Klik item → menuju halaman detail dengan Navigator.pushNamed().
+
+![HomePage](image-11.png)
+
+### 📄 Membuat Halaman ItemPage  
+File: lib/pages/item_page.dart  
+Halaman ini menerima data dari HomePage melalui arguments, lalu menampilkan detail nama dan harga.
+
+![ItemPage](image-12.png)
+
+### 🚀 Menentukan Rute Navigasi  
+File: lib/main.dart  
+Menentukan initialRoute dan routes untuk menghubungkan halaman '/' (HomePage) dan '/item' (ItemPage).
+
+![Routing](image-13.png)
+
+*Output:*
+![Output HomePage](image-14.png)
+
+Ketika item diklik, diarahkan ke halaman detail:
+![Detail Item 1](image-15.png)
+![Detail Item 2](image-16.png)
+
+---
+
+## 🛒 Tugas Praktikum 2: Aplikasi Belanja Flutter  
+
+### 📂 Struktur Folder  
+Struktur folder dan file sama seperti praktikum sebelumnya:  
+![Struktur Folder Belanja](image-17.png)
+
+### 🖼️ Menambahkan Gambar di pubspec.yaml  
+![Pubspec](image-18.png)
+
+### 🧱 Membuat Model Data  
+![Model Data](image-19.png)
+
+### 🏠 Membuat Halaman Home  
+![Home Page](dart3.png)
+
+### 📄 Membuat Halaman Item  
+![Item Page](image-20.png)
+
+### 🧭 Mengatur Navigasi dan Route  
+File main.dart mengimpor halaman item dan home, serta mengatur route.  
+![Main Dart](image-21.png)
+
+### ✨ Menambahkan Hero Animation  
+Hero animation ditambahkan di HomePage dan ItemPage:  
+![Hero Animation](image-22.png)
+
+Efek ini membuat gambar berpindah dengan animasi halus saat produk ditekan.
+
+### 📱 Output:
+Tampilan halaman utama aplikasi belanja:  
+![Output Home Belanja](image-23.png)
+
+Ketika produk diklik:
+#### 🧂 Produk Garam  
+![Produk Garam](image-24.png)
+
+#### 🍬 Produk Gula  
+![Produk Gula](image-25.png)
+
+---
+
+## 📚 Referensi  
+- [Flutter Documentation](https://docs.flutter.dev)  
+- [Cookbook: Useful Flutter Samples](https://docs.flutter.dev/cookbook)  
+- [Codelab: Write Your First Flutter App](https://docs.flutter.dev/get-started/codelab)
+
+---
+
+*🧾 Disusun oleh:*  
+👤 *Ivan Rizal*  
+💻 *Politeknik Negeri Malang – Sistem Informasi Bisnis*  
+📅 *Tahun: 2025*
