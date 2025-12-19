@@ -24,14 +24,14 @@ Sistem ini mengadopsi arsitektur berbasis peran (*Role-Based Access Control*) ya
 
 ## Fitur Unggulan
 
-### Modul Mahasiswa (Pengguna)
+### Modul User (Pengguna)
 * **Katalog Inventaris Digital:** Akses komprehensif terhadap daftar alat laboratorium, mencakup spesifikasi teknis, visualisasi alat, dan informasi ketersediaan stok di setiap laboratorium.
 * **Sistem Peminjaman Terintegrasi:** Mekanisme pengajuan peminjaman yang efisien dengan validasi formulir digital untuk pemilihan tanggal dan durasi peminjaman.
 * **Pemantauan Status Real-Time:** Transparansi proses pengajuan melalui notifikasi status persetujuan yang terbarui secara otomatis.
 * **Arsip Transaksi:** Rekam jejak digital seluruh aktivitas peminjaman yang telah dilakukan oleh pengguna untuk keperluan audit pribadi.
 * **Manajemen Profil:** Pengelolaan data identitas pengguna yang aman dan terstruktur.
 
-### Modul Administrator (Laboran)
+### Modul Administrator (Admin Lab)
 * **Dasbor Analitik:** Visualisasi ringkas mengenai aktivitas peminjaman yang sedang berlangsung untuk mendukung pengambilan keputusan operasional.
 * **Manajemen Inventaris:** Kontrol penuh untuk pembaruan data aset, penambahan unit baru, serta penyesuaian informasi teknis alat.
 * **Sistem Validasi:** Otoritas untuk meninjau, menyetujui, atau menolak permohonan peminjaman berdasarkan ketersediaan dan kebijakan laboratorium.
@@ -45,7 +45,7 @@ Aplikasi ini dibangun di atas fondasi teknologi modern untuk menjamin performa t
 
 * **Kerangka Kerja (Framework):** Flutter (Dart Language)
 * **Backend & Basis Data:** Google Firebase (Authentication & Cloud Firestore)
-* **Arsitektur Perangkat Lunak:** Model-View-Controller (MVC)
+* **Arsitektur Perangkat Lunak:** MVVM (Model-View-ViewModel).
 * **Lingkungan Pengembangan:** Visual Studio Code, Android Studio
 
 ---
