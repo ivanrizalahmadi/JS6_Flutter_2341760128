@@ -7,8 +7,8 @@ Aplikasi LABIFY telah melalui tahap pengembangan dan pengujian akhir, serta siap
 
 **Pindai Kode QR untuk Mengunduh:**
 
-![Kode QR Unduhan](Labify.apk.png)
-*(Pastikan file gambar QR Code Anda bernama 'qrcode.png' dan letakkan di direktori yang sama dengan file ini)*
+![Kode QR Unduhan](Labify_apk.png)
+
 
 **Tautan Alternatif:**
 [**UNDUH APLIKASI LABIFY VIA GOOGLE DRIVE**](https://drive.google.com/drive/folders/1RwqCOdwbjhIuICtskyRz97IphvlxJJdV?usp=sharing)
@@ -86,7 +86,7 @@ Bagian ini ditujukan bagi pengembang yang ingin meninjau atau mengembangkan lebi
 ---
 
 ## Tim Pengembang (Kelompok 4)
-Proyek ini dikembangkan oleh tim yang berdedikasi dengan pembagian tanggung jawab sebagai berikut:
+Proyek ini dikembangkan oleh tim yang solid dan bekerja bersama.
 
 * **Aidatul Rosida** 
 * **Dinarul Lailil Mubarokah** 
